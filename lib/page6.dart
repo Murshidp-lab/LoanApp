@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:untitled2/page7.dart';
 
 class Page6 extends StatefulWidget {
@@ -16,42 +17,42 @@ class _Page6State extends State<Page6> {
       body:SingleChildScrollView (child:  Column(
         children: [
        Padding(
-         padding:  EdgeInsets.only(top:190,left: 10),
+         padding:  EdgeInsets.only(top:190.h,left: 10.w),
          child: Text( 'Verify',
            textAlign: TextAlign.center,
            style: TextStyle(
              color: Color(0xFF1F1F1F),
-             fontSize: 31,
+             fontSize: 31.sp,
              fontFamily: 'Poppins',
              fontWeight: FontWeight.w800,
              letterSpacing: 0.07,
            ),),
        ),
          SizedBox(height: 25,), Padding(
-           padding: const EdgeInsets.only(left: 20),
+           padding:  EdgeInsets.only(left: 20.w),
            child: Text('Please enter the 5 digit one time ',
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.black,
-                fontSize: 20,
+                fontSize: 20.sp,
                 fontFamily: 'Poppins',
                 fontWeight: FontWeight.w400,
                 letterSpacing: 0.06,
               ),),
          ),
-         SizedBox(height: 20,), Padding(
-           padding: const EdgeInsets.only(left: 20),
+         SizedBox(height: 20.h,), Padding(
+           padding:  EdgeInsets.only(left: 20.w),
            child: Text('code to activate your account!',
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.black,
-                fontSize: 20,
+                fontSize: 20.sp,
                 fontFamily: 'Poppins',
                 fontWeight: FontWeight.w400,
                 letterSpacing: 0.06,
               ),),
          ),
-          SizedBox(height: 50,),
+          SizedBox(height: 50.h,),
           OtpTextField(enabledBorderColor: Colors.black,
             numberOfFields: 5,
             borderColor:Colors.grey,
@@ -74,11 +75,11 @@ class _Page6State extends State<Page6> {
               );
             }, // end onSubmit
           ),
-         SizedBox(height: 30,), Text( 'Didn’t receive a Code?',
+         SizedBox(height: 30.h,), Text( 'Didn’t receive a Code?',
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.black,
-              fontSize: 18,
+              fontSize: 18.sp,
               fontFamily: 'Poppins',
               fontWeight: FontWeight.w500,
               letterSpacing: 0.06,
@@ -87,33 +88,33 @@ class _Page6State extends State<Page6> {
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Color(0xFF1F1F1F),
-              fontSize: 18,
+              fontSize: 18.sp,
               fontFamily: 'Poppins',
               fontWeight: FontWeight.w700,
               decoration: TextDecoration.underline,
               letterSpacing: 0.06,
             ),),
-        SizedBox(height: 230,),  TextButton(onPressed:  () {
+        SizedBox(height: 230.h,),  TextButton(onPressed:  () {
       Navigator.of(context)
           .push(MaterialPageRoute(builder: (_) => Page7()));
     },
-          child: Container( width: 316,
-              height: 45.28,
+          child: Container( width: 316.w,
+              height: 45.28.h,
               decoration: ShapeDecoration(
                 color: Color(0xFFFF0083),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: BorderRadius.circular(20.r),
                 ),
               ), child: Padding(
-                padding: const EdgeInsets.only(top: 20),
+                padding:  EdgeInsets.only(top: 20.h),
                 child: Text('Verify',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Color(0xFFFFF2F2),
-                    fontSize: 17.72,
+                    fontSize: 17.72.sp,
                     fontFamily: 'Poppins',
                     fontWeight: FontWeight.w600,
-                    height: 0.07,
+                    height: 0.07.h,
                     letterSpacing: 0.06,
                   ),),
               ),),

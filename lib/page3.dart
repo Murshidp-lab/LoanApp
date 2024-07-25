@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:untitled2/page4.dart';
 
 class Page3 extends StatefulWidget {
@@ -15,16 +16,16 @@ class _Screen1State extends State<Page3> {
       body: Column(
         children: [
      Padding(
-       padding: const EdgeInsets.only(top: 130,left: 15),
+       padding: EdgeInsets.only(top: 130.h,left: 15.w),
        child: SizedBox(width:380,child: Image.asset("assets/b.png")),
      ),
-         SizedBox(height: 50,), Text('Pay Bills',
+         SizedBox(height: 50.h,), Text('Pay Bills',
             style: TextStyle(
               color: Colors.black,
-              fontSize: 28,
+              fontSize: 28.sp,
               fontFamily: 'Poppins',
               fontWeight: FontWeight.w700,
-              height: 0.07,
+              height: 0.07.h,
               letterSpacing: 0.06,
             ),),
          SizedBox(height: 30,), Text(
@@ -32,56 +33,56 @@ class _Screen1State extends State<Page3> {
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.black,
-              fontSize: 22,
+              fontSize: 22.sp,
               fontFamily: 'Poppins',
               fontWeight: FontWeight.w400,
-              height: 0.11,
+              height: 0.11.h,
               letterSpacing: 0.06,
             ),
           ),
-          SizedBox(height: 30,),Text(
+          SizedBox(height: 30.h,),Text(
             'subscriptions etc.',
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.black,
-              fontSize: 22,
+              fontSize: 22.sp,
               fontFamily: 'Poppins',
               fontWeight: FontWeight.w400,
-              height: 0.11,
+              height: 0.11.h,
               letterSpacing: 0.06,
             ),
           ),
-         SizedBox(height:30,), Text(
+         SizedBox(height:30.h,), Text(
             'Buy airtime & Bundles.',
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.black,
-              fontSize: 22,
+              fontSize: 22.sp,
               fontFamily: 'Poppins',
               fontWeight: FontWeight.w400,
-              height: 0.11,
+              height: 0.11.h,
               letterSpacing: 0.06,
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 160),
+            padding:  EdgeInsets.only(top: 160.h),
 
               child: TextButton(onPressed: () {Navigator.of(context).push(MaterialPageRoute(builder: (_)=>Page4()));},
-                child: Container( width: 220,
-                  height: 46,
+                child: Container( width: 220.w,
+                  height: 46.h,
                   decoration: ShapeDecoration(
                     color: Color(0xFFFF0083),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.r)),
                   ),child: Center(
                     child: Text(
                       'Next',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 20,
+                        fontSize: 20.sp,
                         fontFamily: 'Poppins',
                         fontWeight: FontWeight.w600,
-                        height: 0.07,
+                        height: 0.07.h,
                         letterSpacing: 0.06,
                       ),
                     ),

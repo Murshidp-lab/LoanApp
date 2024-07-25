@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:linear_progress_bar/linear_progress_bar.dart';
 
 class Page10 extends StatefulWidget {
@@ -16,35 +17,35 @@ class _Page10State extends State<Page10> {
       body: SingleChildScrollView(
         child: Column(children: [
           Padding(
-            padding: const EdgeInsets.only(left: 30, top: 50),
+            padding:  EdgeInsets.only(left: 30.w, top: 50.h),
             child: Row(
               children: [
                 Icon(
                   Icons.menu,
                   color: Colors.white,
-                  size: 30,
+                  size: 30.sp,
                 ),
                 SizedBox(
-                  width: 100,
+                  width: 100.w,
                 ),
                 Text(
                   'Welcome',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 22,
+                    fontSize: 22.sp,
                     fontFamily: 'Poppins',
                     fontWeight: FontWeight.w700,
-                    height: 0.06,
+                    height: 0.06.h,
                   ),
                 ),
                 SizedBox(
-                  width: 100,
+                  width: 100.w,
                 ),
                 Icon(
                   Icons.notifications_none_outlined,
                   color: Colors.white,
-                  size: 30,
+                  size: 30.sp,
                 )
               ],
             ),
@@ -53,7 +54,7 @@ class _Page10State extends State<Page10> {
             'Good afternoon,',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 23,
+              fontSize: 23.sp,
               fontFamily: 'Poppins',
               fontWeight: FontWeight.w600,
             ),
@@ -62,37 +63,37 @@ class _Page10State extends State<Page10> {
             'Jacquie!',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 27,
+              fontSize: 27.sp,
               fontFamily: 'Poppins',
               fontWeight: FontWeight.w800,
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
+            padding:  EdgeInsets.symmetric(horizontal: 10.w),
             child: Stack(
               children: [
                 Image.asset("assets/e.png"),
                 Padding(
-                  padding: const EdgeInsets.only(left: 20, top: 15),
+                  padding:  EdgeInsets.only(left: 20.w, top: 15.h),
                   child: Row(
                     children: [
                       Text(
                         'Loan Balance',
                         style: TextStyle(
                           color: Colors.black,
-                          fontSize: 20,
+                          fontSize: 20.sp,
                           fontFamily: 'Poppins',
                           fontWeight: FontWeight.w700,
                         ),
                       ),
                       SizedBox(
-                        width: 190,
+                        width: 190.w,
                       ),
                       Text(
                         '50%',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 22,
+                          fontSize: 22.sp,
                           fontFamily: 'Poppins',
                           fontWeight: FontWeight.w800,
                         ),
@@ -101,7 +102,7 @@ class _Page10State extends State<Page10> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: 55, left: 20),
+                  padding: EdgeInsets.only(top: 55.h, left: 20.w),
                   child: Row(
                     children: [
                       Text.rich(
@@ -111,7 +112,7 @@ class _Page10State extends State<Page10> {
                               text: '\$3,000.00',
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: 18,
+                                fontSize: 18.sp,
                                 fontFamily: 'Poppins',
                                 fontWeight: FontWeight.w600,
                               ),
@@ -120,7 +121,7 @@ class _Page10State extends State<Page10> {
                               text: ' ',
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: 18,
+                                fontSize: 18.sp,
                                 fontFamily: 'Inter',
                                 fontWeight: FontWeight.w600,
                               ),
@@ -129,7 +130,7 @@ class _Page10State extends State<Page10> {
                               text: 'of \$10,050.00',
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: 18,
+                                fontSize: 18.sp,
                                 fontFamily: 'Poppins',
                                 fontWeight: FontWeight.w400,
                               ),
@@ -138,13 +139,13 @@ class _Page10State extends State<Page10> {
                         ),
                       ),
                       SizedBox(
-                        width: 70,
+                        width: 70.w,
                       ),
                       Text(
                         '39 days left',
                         style: TextStyle(
                           color: Colors.black,
-                          fontSize: 15,
+                          fontSize: 15.sp,
                           fontFamily: 'Poppins',
                           fontWeight: FontWeight.w400,
                         ),
@@ -153,7 +154,7 @@ class _Page10State extends State<Page10> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 90),
+                  padding:  EdgeInsets.only(top: 90.h),
                   child: LinearProgressBar(
                     maxSteps: 5,
                     progressType: LinearProgressBar.progressTypeLinear,
@@ -161,26 +162,26 @@ class _Page10State extends State<Page10> {
                     currentStep: 2,
                     progressColor: Colors.black,
                     backgroundColor: Colors.grey,
-                    borderRadius: BorderRadius.circular(15),
+                    borderRadius: BorderRadius.circular(15.r),
                     //  NEW
                   ),
                 ),
                 //hello
                 Padding(
-                  padding: const EdgeInsets.only(top: 110, left: 200),
+                  padding:  EdgeInsets.only(top: 110.h, left: 200.w),
                   child: Row(
                     children: [
                       Text(
                         'Repay Loan',
                         style: TextStyle(
                           color: Colors.black,
-                          fontSize: 22,
+                          fontSize: 22.sp,
                           fontFamily: 'Poppins',
                           fontWeight: FontWeight.w600,
                         ),
                       ),
                       SizedBox(
-                        width: 20,
+                        width: 20.w,
                       ),
                       GestureDetector(
                           onTap: () {
@@ -188,7 +189,7 @@ class _Page10State extends State<Page10> {
                               context: context,
                               builder: (BuildContext context) {
                                 return SizedBox(
-                                  height: 400,
+                                  height: 400.h,
                                   child: Center(
                                     child: DefaultTabController(
                                       length: 2,
@@ -198,20 +199,20 @@ class _Page10State extends State<Page10> {
                                         children: <Widget>[
                                           Padding(
                                             padding: EdgeInsets.only(
-                                                left: 30, top: 20),
+                                                left: 30.w, top: 20.h),
                                             child: Row(
                                               children: [
                                                 Text(
                                                   'Repay Loan',
                                                   style: TextStyle(
                                                     color: Colors.black,
-                                                    fontSize: 22,
+                                                    fontSize: 22.sp,
                                                     fontFamily: 'Poppins',
                                                     fontWeight: FontWeight.w800,
                                                   ),
                                                 ),
                                                 SizedBox(
-                                                  width: 190,
+                                                  width: 190.w,
                                                 ),
                                                 TextButton(
                                                   onPressed: () {
@@ -220,17 +221,17 @@ class _Page10State extends State<Page10> {
                                                   child: Icon(
                                                     Icons.close,
                                                     color: Colors.black,
-                                                    size: 30,
+                                                    size: 30.sp,
                                                   ),
                                                 )
                                               ],
                                             ),
                                           ),
                                           SizedBox(
-                                            height: 20,
+                                            height: 20.h,
                                           ),
                                           Container(
-                                            height: 45,
+                                            height: 45.h,
                                             child: TabBar(
                                               padding: EdgeInsets.zero,
                                               labelColor: Colors.white,
@@ -239,7 +240,7 @@ class _Page10State extends State<Page10> {
                                                   TabBarIndicatorSize.tab,
                                               indicator: BoxDecoration(
                                                   borderRadius:
-                                                      BorderRadius.circular(30),
+                                                      BorderRadius.circular(30.r),
                                                   color: Color(0xFFFF0083)),
                                               tabs: [
                                                 Tab(
@@ -254,9 +255,9 @@ class _Page10State extends State<Page10> {
                                             ),
                                           ),
                                           Padding(
-                                            padding: EdgeInsets.only(top: 23),
+                                            padding: EdgeInsets.only(top: 23.h),
                                             child: SizedBox(
-                                              height: 230,
+                                              height: 230.h,
                                               child: TabBarView(
                                                 children: [
                                                   Column(
@@ -270,7 +271,7 @@ class _Page10State extends State<Page10> {
                                                           style: TextStyle(
                                                             color: Color(
                                                                 0xFF959595),
-                                                            fontSize: 18,
+                                                            fontSize: 18.sp,
                                                             fontFamily:
                                                                 'Poppins',
                                                             fontWeight:
@@ -281,15 +282,15 @@ class _Page10State extends State<Page10> {
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            const EdgeInsets
+                                                             EdgeInsets
                                                                 .only(
-                                                                top: 10,
-                                                                right: 220),
+                                                                top: 10.h,
+                                                                right: 220.w),
                                                         child: Text(
                                                           'You currently owe',
                                                           style: TextStyle(
                                                             color: Colors.black,
-                                                            fontSize: 16,
+                                                            fontSize: 16.sp,
                                                             fontFamily:
                                                                 'Poppins',
                                                             fontWeight:
@@ -300,10 +301,10 @@ class _Page10State extends State<Page10> {
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            const EdgeInsets
+                                                             EdgeInsets
                                                                 .only(
-                                                                top: 30,
-                                                                right: 220),
+                                                                top: 30.h,
+                                                                right: 220.w),
                                                         child: Text.rich(
                                                           TextSpan(
                                                             children: [
@@ -313,13 +314,13 @@ class _Page10State extends State<Page10> {
                                                                     TextStyle(
                                                                   color: Colors
                                                                       .black,
-                                                                  fontSize: 14,
+                                                                  fontSize: 14.sp,
                                                                   fontFamily:
                                                                       'Poppins',
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w600,
-                                                                  height: 0.08,
+                                                                  height: 0.08.h,
                                                                   letterSpacing:
                                                                       0.04,
                                                                 ),
@@ -331,13 +332,13 @@ class _Page10State extends State<Page10> {
                                                                     TextStyle(
                                                                   color: Colors
                                                                       .black,
-                                                                  fontSize: 24,
+                                                                  fontSize: 24.sp,
                                                                   fontFamily:
                                                                       'Poppins',
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w600,
-                                                                  height: 0.03,
+                                                                  height: 0.03.h,
                                                                   letterSpacing:
                                                                       0.07,
                                                                 ),
@@ -348,11 +349,11 @@ class _Page10State extends State<Page10> {
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            const EdgeInsets
-                                                                .only(top: 60),
+                                                             EdgeInsets
+                                                                .only(top: 60.h),
                                                         child: Container(
-                                                          width: 194,
-                                                          height: 37.26,
+                                                          width: 194.w,
+                                                          height: 37.26.h,
                                                           decoration:
                                                               ShapeDecoration(
                                                             color: Color(
@@ -362,7 +363,7 @@ class _Page10State extends State<Page10> {
                                                               borderRadius:
                                                                   BorderRadius
                                                                       .circular(
-                                                                          24),
+                                                                          24.r),
                                                             ),
                                                           ),
                                                           child: Center(
@@ -374,7 +375,7 @@ class _Page10State extends State<Page10> {
                                                               style: TextStyle(
                                                                 color: Color(
                                                                     0xFFFFF2F2),
-                                                                fontSize: 18,
+                                                                fontSize: 18.sp,
                                                                 fontFamily:
                                                                     'Poppins',
                                                                 fontWeight:
@@ -395,9 +396,9 @@ class _Page10State extends State<Page10> {
                                                         color: Colors.white,
                                                         child: Padding(
                                                           padding:
-                                                              const EdgeInsets
+                                                               EdgeInsets
                                                                   .only(
-                                                                  bottom: 50),
+                                                                  bottom: 50.h),
                                                           child: Text(
                                                             'Repay your loan today and take another one immediately.',
                                                             textAlign: TextAlign
@@ -405,7 +406,7 @@ class _Page10State extends State<Page10> {
                                                             style: TextStyle(
                                                               color: Color(
                                                                   0xFF959595),
-                                                              fontSize: 17,
+                                                              fontSize: 17.sp,
                                                               fontFamily:
                                                                   'Poppins',
                                                               fontWeight:
@@ -418,7 +419,7 @@ class _Page10State extends State<Page10> {
                                                         ),
                                                       ),
                                                       Padding(
-                                                        padding: const EdgeInsets.only(bottom: 20),
+                                                        padding:  EdgeInsets.only(bottom: 20.h),
                                                         child: TextField(
                                                           decoration: InputDecoration(
                                                               labelText:
@@ -427,13 +428,13 @@ class _Page10State extends State<Page10> {
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .circular(
-                                                                              30))),
+                                                                              30.r))),
                                                         ),
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            const EdgeInsets
-                                                                .only(top: 10),
+                                                             EdgeInsets
+                                                                .only(top: 10.h),
                                                         child: GestureDetector(
                                                           onTap: () {
                                                             showModalBottomSheet<
@@ -450,7 +451,7 @@ class _Page10State extends State<Page10> {
 
                                                                   // Returning SizedBox instead of a Container
                                                                   return SizedBox(
-                                                                    height: 500,
+                                                                    height: 500.h,
                                                                     child:
                                                                         Center(
                                                                       child:
@@ -463,75 +464,75 @@ class _Page10State extends State<Page10> {
                                                                             style:
                                                                                 TextStyle(
                                                                               color: Colors.black,
-                                                                              fontSize: 18,
+                                                                              fontSize: 18.sp,
                                                                               fontFamily: 'Poppins',
                                                                               fontWeight: FontWeight.w600,
                                                                               letterSpacing: 0.04,
                                                                             ),
                                                                           ),
                                                                           Padding(
-                                                                            padding: const EdgeInsets.only(top: 20),
+                                                                            padding: EdgeInsets.only(top: 20.h),
                                                                             child: Text( 'Congratulations!',
                                                                               textAlign: TextAlign.center,
                                                                               style: TextStyle(
                                                                                 color: Color(0xFF1F1F1F),
-                                                                                fontSize: 25,
+                                                                                fontSize: 25.sp,
                                                                                 fontFamily: 'Poppins',
                                                                                 fontWeight: FontWeight.w800,
-                                                                                height: 0,
+                                                                                height: 0.h,
                                                                               ),),
                                                                           ),
                                                                           Padding(
-                                                                            padding: const EdgeInsets.only(top: 20),
+                                                                            padding:  EdgeInsets.only(top: 20.h),
                                                                             child: CircleAvatar(
-                                                                              radius: 60,
+                                                                              radius: 60.r,
                                                                               child: Icon(
                                                                                 Icons.done,
                                                                                 color:
                                                                                 Colors.green,
-                                                                                size: 70,
+                                                                                size: 70.sp,
                                                                               ),
                                                                             ),
                                                                           ),
                                                                           Padding(
-                                                                            padding: const EdgeInsets.only(top: 40),
+                                                                            padding:  EdgeInsets.only(top: 40.h),
                                                                             child: Text( 'Transaction Summary',
                                                                               textAlign: TextAlign.center,
                                                                               style: TextStyle(
                                                                                 color: Color(0xFF1F1F1F),
-                                                                                fontSize: 18,
+                                                                                fontSize: 18.sp,
                                                                                 fontFamily: 'Poppins',
                                                                                 fontWeight: FontWeight.w700,
                                                                               ),),
                                                                           ),
                                                                           Padding(
-                                                                            padding: const EdgeInsets.only(top: 20),
+                                                                            padding:  EdgeInsets.only(top: 20.h),
                                                                             child: Text( '\$ 10,050.00 ',
                                                                               textAlign: TextAlign.center,
                                                                               style: TextStyle(
                                                                                 color: Color(0xFF1F1F1F),
-                                                                                fontSize: 24,
+                                                                                fontSize: 24.sp,
                                                                                 fontFamily: 'Poppins',
                                                                                 fontWeight: FontWeight.w800,
                                                                               ),),
                                                                           ),
                                                                           Padding(
-                                                                            padding: const EdgeInsets.only(top: 30),
+                                                                            padding:  EdgeInsets.only(top: 30.h),
                                                                             child: Text( 'Your Loan has been fully\nPaid',
                                                                               textAlign: TextAlign.center,
                                                                               style: TextStyle(
                                                                                 color: Color(0xFF1F1F1F),
-                                                                                fontSize: 18,
+                                                                                fontSize: 18.sp,
                                                                                 fontFamily: 'Poppins',
                                                                                 fontWeight: FontWeight.w700,
                                                                               ),),
                                                                           ),
-                                                                          Container( width: 316,
-                                                                            height: 45.28,
+                                                                          Container( width: 316.w,
+                                                                            height: 45.28.h,
                                                                             decoration: ShapeDecoration(
                                                                               color: Color(0xFFFF0083),
                                                                               shape: RoundedRectangleBorder(
-                                                                                borderRadius: BorderRadius.circular(20),
+                                                                                borderRadius: BorderRadius.circular(20.r),
                                                                               ),
                                                                             ),child: Center(
                                                                               child: Text(
@@ -542,7 +543,7 @@ class _Page10State extends State<Page10> {
                                                                                   style: TextStyle(
                                                                                     color: Color(
                                                                                         0xFFFFF2F2),
-                                                                                    fontSize: 18,
+                                                                                    fontSize: 18.sp,
                                                                                     fontFamily:
                                                                                     'Poppins',
                                                                                     fontWeight:
@@ -560,8 +561,8 @@ class _Page10State extends State<Page10> {
                                                                 });
                                                           },
                                                           child: Container(
-                                                            width: 194,
-                                                            height: 37.26,
+                                                            width: 194.w,
+                                                            height: 37.26.h,
                                                             decoration:
                                                                 ShapeDecoration(
                                                               color: Color(
@@ -571,7 +572,7 @@ class _Page10State extends State<Page10> {
                                                                 borderRadius:
                                                                     BorderRadius
                                                                         .circular(
-                                                                            24),
+                                                                            24.r),
                                                               ),
                                                             ),
                                                             child: Center(
@@ -584,7 +585,7 @@ class _Page10State extends State<Page10> {
                                                                     TextStyle(
                                                                   color: Color(
                                                                       0xFFFFF2F2),
-                                                                  fontSize: 18,
+                                                                  fontSize: 18.sp,
                                                                   fontFamily:
                                                                       'Poppins',
                                                                   fontWeight:
@@ -615,7 +616,7 @@ class _Page10State extends State<Page10> {
                           child: Icon(
                             Icons.arrow_circle_right,
                             color: Colors.pink,
-                            size: 50,
+                            size: 50.sp,
                           ))
                     ],
                   ),
@@ -624,42 +625,42 @@ class _Page10State extends State<Page10> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 20),
+            padding: EdgeInsets.only(top: 20.h),
             child: Container(
-              width: 410,
-              height: 530,
+              width: 410.w,
+              height: 530.h,
               decoration: ShapeDecoration(
                 color: Colors.white,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(26),
-                    topRight: Radius.circular(26),
+                    topLeft: Radius.circular(26.r),
+                    topRight: Radius.circular(26.r),
                   ),
                 ),
               ),
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(top: 30, left: 30),
+                    padding:  EdgeInsets.only(top: 30.h, left: 30.w),
                     child: Row(
                       children: [
                         Text(
                           'Transactions',
                           style: TextStyle(
                             color: Color(0xFF242424),
-                            fontSize: 20,
+                            fontSize: 20.sp,
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w800,
                           ),
                         ),
                         SizedBox(
-                          width: 170,
+                          width: 170.w,
                         ),
                         Text(
                           'See All',
                           style: TextStyle(
                             color: Color(0xFFFF0083),
-                            fontSize: 18,
+                            fontSize: 18.sp,
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w800,
                           ),
@@ -668,38 +669,38 @@ class _Page10State extends State<Page10> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(right: 230, top: 30),
+                    padding:  EdgeInsets.only(right: 230.w, top: 30.h),
                     child: Text(
                       'Mini-Statement',
                       style: TextStyle(
                         color: Color(0xFF707070),
-                        fontSize: 16,
+                        fontSize: 16.sp,
                         fontFamily: 'Poppins',
                         fontWeight: FontWeight.w400,
                       ),
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 35, top: 10),
+                    padding:  EdgeInsets.only(left: 35.w, top: 10.h),
                     child: Row(
                       children: [
                         Text(
                           'Loan Disbursement',
                           style: TextStyle(
                             color: Colors.black,
-                            fontSize: 18,
+                            fontSize: 18.sp,
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w500,
                           ),
                         ),
                         SizedBox(
-                          width: 80,
+                          width: 80.w,
                         ),
                         Text(
                           '\$10,050.00',
                           style: TextStyle(
                             color: Color(0xFF53D258),
-                            fontSize: 22,
+                            fontSize: 22.sp,
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w600,
                           ),
@@ -708,38 +709,38 @@ class _Page10State extends State<Page10> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(right: 250, top: 10),
+                    padding:  EdgeInsets.only(right: 250.w, top: 10.h),
                     child: Text(
                       '2022-09-12',
                       style: TextStyle(
                         color: Color(0xFF707070),
-                        fontSize: 16,
+                        fontSize: 16.sp,
                         fontFamily: 'Poppins',
                         fontWeight: FontWeight.w400,
                       ),
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 35, top: 10),
+                    padding:  EdgeInsets.only(left: 35.w, top: 10.h),
                     child: Row(
                       children: [
                         Text(
                           'Withdraw to Bank',
                           style: TextStyle(
                             color: Colors.black,
-                            fontSize: 18,
+                            fontSize: 18.sp,
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w500,
                           ),
                         ),
                         SizedBox(
-                          width: 80,
+                          width: 80.w,
                         ),
                         Text(
                           '-\$10,050.00',
                           style: TextStyle(
                             color: Color(0xFFE25C5C),
-                            fontSize: 22,
+                            fontSize: 22.sp,
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w600,
                           ),
@@ -748,38 +749,38 @@ class _Page10State extends State<Page10> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(right: 250, top: 10),
+                    padding:  EdgeInsets.only(right: 250.w, top: 10.h),
                     child: Text(
                       '2022-09-12',
                       style: TextStyle(
                         color: Color(0xFF707070),
-                        fontSize: 16,
+                        fontSize: 16.sp,
                         fontFamily: 'Poppins',
                         fontWeight: FontWeight.w400,
                       ),
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 35, top: 10),
+                    padding:  EdgeInsets.only(left: 35.w, top: 10.h),
                     child: Row(
                       children: [
                         Text(
                           'Loan Repayment',
                           style: TextStyle(
                             color: Colors.black,
-                            fontSize: 18,
+                            fontSize: 18.sp,
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w500,
                           ),
                         ),
                         SizedBox(
-                          width: 110,
+                          width: 110.w,
                         ),
                         Text(
                           '\$3,000.00',
                           style: TextStyle(
                             color: Color(0xFF53D258),
-                            fontSize: 22,
+                            fontSize: 22.sp,
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w600,
                           ),
@@ -788,38 +789,38 @@ class _Page10State extends State<Page10> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(right: 230, top: 10),
+                    padding:  EdgeInsets.only(right: 230.w, top: 10.h),
                     child: Text(
                       '2022-09-12',
                       style: TextStyle(
                         color: Color(0xFF707070),
-                        fontSize: 18,
+                        fontSize: 18.sp,
                         fontFamily: 'Poppins',
                         fontWeight: FontWeight.w400,
                       ),
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 35),
+                    padding:  EdgeInsets.only(left: 35.w),
                     child: Row(
                       children: [
                         Text(
                           'Loan Repayment Fees',
                           style: TextStyle(
                             color: Colors.black,
-                            fontSize: 18,
+                            fontSize: 18.sp,
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w500,
                           ),
                         ),
                         SizedBox(
-                          width: 90,
+                          width: 90.w,
                         ),
                         Text(
                           '-\$32.00',
                           style: TextStyle(
                             color: Color(0xFFE25C5C),
-                            fontSize: 22,
+                            fontSize: 22.sp,
                             fontFamily: 'Inter',
                             fontWeight: FontWeight.w600,
                           ),
@@ -828,12 +829,12 @@ class _Page10State extends State<Page10> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(right: 230, top: 10),
+                    padding:  EdgeInsets.only(right: 230.w, top: 10.h),
                     child: Text(
                       '2022-09-12',
                       style: TextStyle(
                         color: Color(0xFF707070),
-                        fontSize: 18,
+                        fontSize: 18.sp ,
                         fontFamily: 'Poppins',
                         fontWeight: FontWeight.w400,
                       ),

@@ -16,24 +16,23 @@ class _Screen1State extends State<Screen1> {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.only(top: 150, left: 10),
+            padding:  EdgeInsets.only(top: 150.h, left: 10.w),
             child: Text(
               'Pay Fast',
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.black,
-                fontSize: 40,
+                fontSize: 40.sp,
                 fontFamily: 'Poppins',
                 fontWeight: FontWeight.w900,
-                height: 0.05,
               ),
             ),
           ),
           SizedBox(
-            height: 40,
+            height: 40.h,
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 30, left: 25),
+            padding:  EdgeInsets.only(top: 30.h, left: 25.w),
             child: Column(
               children: [
                 Text(
@@ -41,18 +40,18 @@ class _Screen1State extends State<Screen1> {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: 24,
+                    fontSize: 24.sp,
                     fontFamily: 'Poppins',
                     fontWeight: FontWeight.w500,
-                    height: 0.05,
+                    height: 0.05.h,
                   ),
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 10.h,
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(
-                    top: 20,
+                  padding:  EdgeInsets.only(
+                    top: 20.h,
                   ),
                   child: Text(
                     "You Know About",
@@ -62,22 +61,20 @@ class _Screen1State extends State<Screen1> {
                       fontSize: 24.sp,
                       fontFamily: 'Poppins',
                       fontWeight: FontWeight.w500,
-                      height: 0.05,
                     ),
                   ),
                 ),
-                SizedBox(height: 10),
+                SizedBox(height: 10.h),
                 Padding(
-                  padding: const EdgeInsets.only(top: 20, left: 20),
+                  padding:  EdgeInsets.only(top: 20.h, left: 20.w),
                   child: Text(
                     "Banking",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 24,
+                      fontSize: 24.sp,
                       fontFamily: 'Poppins',
                       fontWeight: FontWeight.w500,
-                      height: 0.05,
                     ),
                   ),
                 ),
@@ -85,22 +82,22 @@ class _Screen1State extends State<Screen1> {
             ),
           ),
           SizedBox(
-            width: 60,
-            height: 30,
+            width: 60.w,
+            height: 30.h,
           ),
           Image.asset("assets/a.png"),
           SizedBox(
-            height: 20,
+            height: 20.h,
           ),
           TextButton(
             onPressed: () {Navigator.of(context).push(MaterialPageRoute(builder: (_)=>Page2()));},
             child: Container(
-                width: 220,
-                height: 46,
+                width: 220.w,
+                height: 46.h,
                 decoration: ShapeDecoration(
                   color: Color(0xFFFF0083),
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18)),
+                      borderRadius: BorderRadius.circular(18.r)),
                 ),
                 child: Center(
                   child: Text(
@@ -108,25 +105,24 @@ class _Screen1State extends State<Screen1> {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 18,
+                      fontSize: 18.sp,
                       fontFamily: 'Poppins',
                       fontWeight: FontWeight.w600,
-                      height: 0.07,
                       letterSpacing: 0.06,
                     ),
                   ),
                 )),
           ),
           SizedBox(
-            height: 30,
+            height: 30.h,
           ),
           Container(
-            width: 220,
-            height: 46,
+            width: 220.w,
+            height: 46.h,
             decoration: ShapeDecoration(
               color: Color(0xFFFF0083),
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18)),
+                  borderRadius: BorderRadius.circular(18.r)),
             ),
             child: Center(
               child: Text(
@@ -134,10 +130,9 @@ class _Screen1State extends State<Screen1> {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 18,
+                  fontSize: 18.sp,
                   fontFamily: 'Poppins',
                   fontWeight: FontWeight.w600,
-                  height: 0.07,
                   letterSpacing: 0.06,
                 ),
               ),

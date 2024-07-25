@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:untitled2/page3.dart';
 
 class Page2 extends StatefulWidget {
@@ -15,80 +16,77 @@ class _Page2State extends State<Page2> {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.only(top: 150),
+            padding:  EdgeInsets.only(top: 150.h),
             child: Image.asset("assets/a.png"),
           ),
           SizedBox(
-            height: 40,
+            height: 40.h,
           ),
           Text(
             'Send Money',
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.black,
-              fontSize: 30,
+              fontSize: 30.sp,
               fontFamily: 'Poppins',
               fontWeight: FontWeight.w900,
-              height: 0.07,
               letterSpacing: 0.06,
             ),
           ),
           SizedBox(
-            height: 30,
+            height: 30.h,
           ),
           Text(
             'Send money to all networks and banks ',
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.black,
-              fontSize: 18,
+              fontSize: 18.sp,
               fontFamily: 'Poppins',
               fontWeight: FontWeight.w500,
-              height: 0.11,
               letterSpacing: 0.06,
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 20.h,
           ),
           Text(
             'right from your Pay Fast ',
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.black,
-              fontSize: 18,
+              fontSize: 18.sp,
               fontFamily: 'Poppins',
               fontWeight: FontWeight.w500,
-              height: 0.11,
               letterSpacing: 0.06,
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 20.h,
           ),
           Text(
             'account. ',
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.black,
-              fontSize: 18,
+              fontSize: 18.sp,
               fontFamily: 'Poppins',
               fontWeight: FontWeight.w500,
-              height: 0.11,
+              height: 0.11.h,
               letterSpacing: 0.06,
             ),
           ),
           SizedBox(
-            height: 160,
+            height: 160.h,
           ),
           TextButton(onPressed: () {Navigator.of(context).push(MaterialPageRoute(builder: (_)=>Page3()));},
             child: Container(
-              width: 220,
-              height: 46,
+              width: 220.w,
+              height: 46.h,
               decoration: ShapeDecoration(
                 color: Color(0xFFFF0083),
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20)),
+                    borderRadius: BorderRadius.circular(20.r)),
               ),
               child: Center(
                 child: Text(
@@ -96,10 +94,10 @@ class _Page2State extends State<Page2> {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 20,
+                    fontSize: 20.sp,
                     fontFamily: 'Poppins',
                     fontWeight: FontWeight.w600,
-                    height: 0.07,
+                    height: 0.07.h,
                     letterSpacing: 0.06,
                   ),
                 ),
